@@ -13,7 +13,7 @@ class MovieTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var posterImageView: UIImageView!
-    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
 
     override func awakeFromNib() {
@@ -31,6 +31,6 @@ class MovieTableViewCell: UITableViewCell {
         guard let movie = movie else {return}
         nameLabel.text = movie.name
         ratingLabel.text = "Rating: \(movie.rating)"
-        descriptionTextView.text = movie.description
+        descriptionLabel.text = movie.description
     }
 }
